@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 // import Todo from './Todo';
 import Actor from './Actor';
 import Singers from './Singers';
+import Books from './Books';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         actors.map(actor =><Actor name={actor}></Actor>)
       }
       <Singers></Singers>
+      <Books></Books>
       {/* <Todo task='Learn React' isDone ={true}></Todo>
       <Todo task='Core Concepts' isDone={false}></Todo>
       <Todo task='Try JSX' isDone={true}></Todo> */}
