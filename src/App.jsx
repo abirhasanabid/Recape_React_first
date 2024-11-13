@@ -1,18 +1,22 @@
 import './App.css'
 import PropTypes from 'prop-types';
+import Todo from './Todo';
 
 function App() {
 
   return (
     <>
       <h1>Vite + React</h1>
-      <Persone></Persone>
+      <Todo task='Learn React' isDone ={true}></Todo>
+      <Todo task='Core Concepts' isDone={false}></Todo>
+      <Todo task='Try JSX' isDone={true}></Todo>
+      {/* <Persone></Persone>
       <Device name="laptop" price="55k"></Device>
       <Device name="phone" price="30k"></Device>
       <Student name="Abid" age="20"></Student>
       <Student name="Hridoy" age="21"></Student>
       <Student name="Rifat" age="22"></Student>
-      <Developer></Developer>
+      <Developer></Developer> */}
     </>
   )
 }
@@ -26,7 +30,7 @@ function Persone() {
   const age = 35;
   const person = { name: 'Abid', age: 21 };
   return (
-    <h3>I am a person my name is {person.name} and I am {person.age} years old and my favourite techer age is {age}</h3>
+    <h3>I am a person my name is {person.name} and I am {person.age} years old and my favourite teacher age is {age}</h3>
   )
 }
 
