@@ -1,15 +1,24 @@
 import './App.css'
 import PropTypes from 'prop-types';
-import Todo from './Todo';
+// import Todo from './Todo';
+import Actor from './Actor';
+import Singers from './Singers';
 
 function App() {
+
+  const actors = ['sakib', 'raj', 'jashim', 'rubel'];
 
   return (
     <>
       <h1>Vite + React</h1>
-      <Todo task='Learn React' isDone ={true}></Todo>
+      <Actor name="rokib"></Actor>
+      {
+        actors.map(actor =><Actor name={actor}></Actor>)
+      }
+      <Singers></Singers>
+      {/* <Todo task='Learn React' isDone ={true}></Todo>
       <Todo task='Core Concepts' isDone={false}></Todo>
-      <Todo task='Try JSX' isDone={true}></Todo>
+      <Todo task='Try JSX' isDone={true}></Todo> */}
       {/* <Persone></Persone>
       <Device name="laptop" price="55k"></Device>
       <Device name="phone" price="30k"></Device>
